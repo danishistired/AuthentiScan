@@ -20,7 +20,7 @@ const ImageUpload = () => {
     formData.append("file", image);
 
     try {
-      const response = await axios.post("http://127.0.0.1:5000/predict", formData);
+      const response = await axios.post("https://authentiscan-hk43.onrender.com/predict", formData);
       setResult(response.data.result);
     } catch (error) {
       console.error("Error uploading image:", error);
