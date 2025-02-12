@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuthentiScan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Deepfake Detection</h1>
+        <div class="upload-box">
+            <input type="file" id="fileInput" accept="image/*">
+            <label for="fileInput" class="upload-label">Choose an Image</label>
+            <img id="previewImage" src="" alt="Preview" style="display: none;">
+            <button id="uploadBtn">Upload & Detect</button>
+            <p id="resultText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
