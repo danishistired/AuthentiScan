@@ -24,7 +24,7 @@ document.getElementById('uploadBtn').addEventListener('click', function() {
     let formData = new FormData();
     formData.append('file', fileInput.files[0]);
 
-    fetch('https://authentiscan-hk43.onrender.com/', {
+    fetch('https://authentiscan-hk43.onrender.com/predict', {
         method: 'POST',
         body: formData
     })
